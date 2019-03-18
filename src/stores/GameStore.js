@@ -1,7 +1,23 @@
-import { observable } from 'mobx';
+import { observable, action, computed } from 'mobx';
+import Constants from '../utils/Constants';
 
 class GameStore {
-  @observable count = 0
+  // Obervables
+  @observable count = 0;
+  @observable playerPosition = Constants.startingPlayerPosition;
+  @observable currentStageKey = 'mainHall';
+
+  // Actions
+  @action test = () => {
+
+  }
+
+  // Computed
+  @computed get value() {
+
+    return ''
+  }
 }
 
-export default GameStore;
+const store = new GameStore();
+export default store;
