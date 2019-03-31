@@ -1,14 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import './styles/Stage.css'
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 import { Provider } from 'mobx-react';
 import GameStore from './stores/GameStore';
+import StageStore from './stores/StageStore';
 
 const Root = (
-  <Provider GameStore={GameStore}>
+  <Provider
+    GameStore={GameStore}
+    StageStore={StageStore}
+  >
     <App />
   </Provider>
 )

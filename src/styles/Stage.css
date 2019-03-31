@@ -1,0 +1,8 @@
+.stage {
+  display: flex;
+  background-color: blue;
+}
+
+.stage__tile--player {
+  background-color: red;
+}

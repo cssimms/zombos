@@ -1,3 +1,21 @@
+## Dev Notes
+- big map can just be stored in an object
+
+
+- tiles will be their own class
+  - stages will populate tiles
+  - tiles can have their own type and be responsible for rendering their respective sprite - including shading depending on light levels
+
+
+- class structure for moving objects
+
+
+
+
+
+
+## Create React App
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
